@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+.App {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100vw;
+  width: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+
+.logo img {
+  height: 40px;
+}
+
+nav {
+  width: auto;
+  height: auto;
+  background-color: #0a0a0a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 1px solid #262424;
+  border-radius: 13px;
+  gap: 20px;
+}
+
+nav a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #c8c8c8;
+  transition: color 0.5s;
+}
+
+nav a:hover {
+  color: #c5e6ff;
+}
+
+.cta-button a {
+  background-color: #0a0a0a;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 39px;
+  font-size: 1.2rem;
+  border: 2px solid #333; /* Dark grey border */
+  transition: color 0.3s, border-color 0.3s; /* Added border-color transition */
+}
+
+.cta-button a:hover {
+  color: #c5e6ff;
+  border-color: #c5e6ff; /* Change border color on hover */
+}
+
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.landing-content h1 {
+  font-size: 8rem;
+  margin: 0;
+  color: #c5e6ff;
+  font-weight: bold;
+}
+
+.landing-content p {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #0a0a0a;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.button:hover {
+  color: #c5e6ff;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
