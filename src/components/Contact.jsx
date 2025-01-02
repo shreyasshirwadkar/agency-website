@@ -20,7 +20,7 @@ const Contact = () => {
     <div className='w-full h-full bg-light-black p-10 '>
       <div className='flex flex-row justify-around w-full mt-20 bg-light-black mb-28'>
         <div>
-        <h1 className='text-8xl text-cyan-text mb-14 font-medium '>Let's talk!</h1>
+        <h1 className='text-8xl text-gradient mb-14 font-medium '>Let's talk!</h1>
         <h2 className='text-xl text-cyan-text'>Office:</h2>
         <p className='text-white'>Keizersgracht 520,<br></br> 1017EK
 Amsterdam <br></br>
@@ -39,15 +39,15 @@ The Netherlands</p>
       <form className="my-8" onSubmit={handleSubmit}>
         <LabelInputContainer >
             <Label htmlFor="firstname">First name</Label>
-            <Input id="firstname" placeholder="Leo Messi" type="text" className="bg-zinc-900"/>
+            <Input id="firstname" placeholder="Leo Messi" type="text" className="bg-zinc-900 text-white"/>
           </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email Address</Label>
-          <Input id="email" placeholder="leo@example.com" type="email" className="bg-zinc-900"/>
+          <Input id="email" placeholder="leo@example.com" type="email" className="bg-zinc-900 text-white"/>
         </LabelInputContainer>
         <LabelInputContainer className="mb-8">
           <Label htmlFor="phone">Phone</Label>
-          <Input id="phone" placeholder="+91 7111521832" type="twitterpassword" className="bg-zinc-900"/>
+          <Input id="phone" placeholder="+91 7111521832" type="twitterpassword" className="bg-zinc-900 text-white"/>
         </LabelInputContainer>
 
         <button

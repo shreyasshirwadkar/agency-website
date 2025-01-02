@@ -21,19 +21,40 @@ module.exports = {
       },
       backgroundImage: {
         'custom-radial': 'radial-gradient(50% 50% at -8.2% -24.4%, rgba(80, 176, 250, 0.1) 0%, rgba(64, 140, 199, 0.05) 36.49%, rgb(13, 13, 13) 100%)',
+        'gradient-text': 'linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(112, 190, 250) 100%)',
+
       },
       colors: {
         'light-black': '#0a0a0a',
         'cyan-text' : '#c5e6ff',
+
       },
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        aurora: "aurora 60s linear infinite",
+        shimmer: "shimmer 2s linear infinite",
       },
       keyframes: {
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
           },
         },
       },

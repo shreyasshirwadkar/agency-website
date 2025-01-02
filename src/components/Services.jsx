@@ -9,7 +9,7 @@ import { SimpleCard } from './ui/simple-card';
 const Services = () => {
   return (
     <div className='w-full h-full bg-light-black p-10'>
-      <h1 className='text-4xl sm:text-6xl lg:text-8xl text-cyan-text font-medium mt-20 mb-14 '>
+      <h1 className='text-4xl sm:text-6xl lg:text-8xl text-gradient font-medium mt-20 mb-14 '>
         What we do
       </h1>
       {/* Flex container for 3 columns and 2 rows */}

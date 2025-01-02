@@ -4,7 +4,7 @@ import { SimpleCard } from "../components/ui/simple-card";
 const Stats = () => {
   return (
     <div className='w-full h-full bg-light-black p-10'>
-      <h1 className='text-8xl text-cyan-text mb-14 font-medium mt-20 text-center md:text-left'> Our statistics</h1>
+      <h1 className='text-8xl text-gradient mb-14 font-medium mt-20 text-center md:text-left'> Our statistics</h1>
       {/* Flex container for responsive grid */}
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20'>
         {/* Card 1 */}

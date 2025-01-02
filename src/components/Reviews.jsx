@@ -5,14 +5,14 @@ import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 const Review = () => {
   return (
     <div className='w-full h-full bg-light-black p-10'>
-      <h1 className='text-8xl text-cyan-text font-medium mt-20 mb-14'> Reviews</h1>
+      <h1 className='text-8xl text-gradient font-medium mt-20 mb-14'> Reviews</h1>
        <div
       className=" rounded-md flex flex-col antialiased  dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
+      <InfiniteMovingCards items={testimonials} direction="right" speed="normal" />
     </div>
     <div
       className="mb-20 rounded-md flex flex-col antialiased  dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <InfiniteMovingCards items={testimonials} direction="left" speed="slow" />
+      <InfiniteMovingCards items={testimonials} direction="left" speed="normal" />
     </div>
     </div>
   );
