@@ -7,7 +7,7 @@ const FooterComponent = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Logo Section */}
         <div className="flex justify-start">
-          <a href="https://flowbite.com">
+          <a href="services-section">
             <img
               src={logo}
               alt="Logo"
@@ -21,17 +21,17 @@ const FooterComponent = () => {
           <div>
             <h3 className="text-lg text-slate-300 mb-4">Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:underline text-slate-400">Services</a></li>
-              <li><a href="#" className="hover:underline text-slate-400">Stats</a></li>
-              <li><a href="#" className="hover:underline text-slate-400">Reviews</a></li>
-              <li><a href="#" className="hover:underline text-slate-400">Contact</a></li>
+              <li><a href="#" className=" hover:text-slate-300 text-slate-400">Services</a></li>
+              <li><a href="#" className=" hover:text-slate-300 text-slate-400">Stats</a></li>
+              <li><a href="#" className=" hover:text-slate-300 text-slate-400">Reviews</a></li>
+              <li><a href="#" className=" hover:text-slate-300 text-slate-400">Contact</a></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-lg text-slate-300 mb-4">Credits</h3>
             <ul className="space-y-2">
-              <li><a className="text-slate-400">Shreyas Shirwadkar</a></li>
+              <li><a href="https://www.linkedin.com/in/shreyas-shirwadkar/" className="text-slate-400 hover:text-slate-300">Shreyas Shirwadkar</a></li>
             </ul>
           </div>
         </div>

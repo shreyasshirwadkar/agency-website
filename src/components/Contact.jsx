@@ -3,11 +3,7 @@ import React from 'react';
 import { Label } from "../components/ui/label";
 import { Input } from "../components/ui/input-form";
 import { cn } from "../lib/utils";
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
+
 
 const handleSubmit = (e) => {
   e.preventDefault();
@@ -18,9 +14,9 @@ const Contact = () => {
  
   return (
     <div className='w-full h-full bg-light-black p-10 '>
-      <div className='flex flex-row justify-around w-full mt-20 bg-light-black mb-28'>
+      <div className='flex flex-col items-center gap-20 md:gap-0 lg:flex-row lg:justify-around w-full mt-20 bg-light-black mb-28'>
         <div>
-        <h1 className='text-8xl text-gradient mb-14 font-medium '>Let's talk!</h1>
+        <h1 className='text-4xl sm:text-9xl lg:text-8xl text-gradient mb-14 font-medium '>Let's talk!</h1>
         <h2 className='text-xl text-cyan-text'>Office:</h2>
         <p className='text-white'>Keizersgracht 520,<br></br> 1017EK
 Amsterdam <br></br>

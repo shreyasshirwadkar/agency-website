@@ -5,18 +5,24 @@ import CommerceLogo from '../assets/commerce-logo.png';
 import MarketingLogo from '../assets/marketing-logo.png';
 import SocialmediaLogo from '../assets/socialmedia-logo.png';
 import { SimpleCard } from './ui/simple-card';
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
+  
     <div className='w-full h-full bg-light-black p-10'>
-      <h1 className='text-4xl sm:text-6xl lg:text-8xl text-gradient font-medium mt-20 mb-14 '>
+      
+      <h1 className='text-center lg:text-left text-4xl sm:text-9xl lg:text-8xl text-gradient font-medium mt-20 mb-14 '>
         What we do
       </h1>
+    
       {/* Flex container for 3 columns and 2 rows */}
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center place-content-center gap-8 px-4 sm:px-8 lg:px-20'>
         {/* Card 1 */}
+        
         <SimpleCard className="w-full max-w-xs h-full flex flex-col justify-center items-center border-l-0">
-          <img src={AppDevLogo} alt="App Development Logo" className="w-16 sm:w-16 h-16 sm:h-20 mb-4" />
+          
+          <img src={AppDevLogo} alt="App Development Logo" className="w-16 sm:w-12 h-16 sm:h-13 mb-4" />
           <h1 className='text-cyan-text text-xl sm:text-2xl lg:text-3xl font-bold text-center'>
             App Development
           </h1>
@@ -27,7 +33,7 @@ const Services = () => {
 
         {/* Card 2 */}
         <SimpleCard className="w-full max-w-xs h-full flex flex-col justify-center items-center border-l-0">
-          <img src={WebDevLogo} alt="Web Development Logo" className="w-16 sm:w-16 h-16 sm:h-20 mb-4" />
+          <img src={WebDevLogo} alt="Web Development Logo" className="w-16 sm:w-12 h-16 sm:h-13 mb-4" />
           <h1 className='text-cyan-text text-xl sm:text-2xl lg:text-3xl font-bold text-center'>
             Web Development
           </h1>
@@ -38,7 +44,7 @@ const Services = () => {
 
         {/* Card 3 */}
         <SimpleCard className="w-full max-w-xs h-full flex flex-col justify-center items-center border-l-0">
-          <img src={CommerceLogo} alt="UX/UI Design Logo" className="w-16 sm:w-16 h-16 sm:h-20 mb-4" />
+          <img src={CommerceLogo} alt="UX/UI Design Logo" className="w-16 sm:w-12 h-16 sm:h-13 mb-4" />
           <h1 className='text-cyan-text text-xl sm:text-2xl lg:text-3xl font-bold text-center'>
             E-commerce
           </h1>
@@ -49,7 +55,7 @@ const Services = () => {
 
         {/* Card 4 */}
         <SimpleCard className="w-full max-w-xs h-full flex flex-col justify-center items-center border-l-0">
-          <img src={CommerceLogo} alt="SEO Logo" className="w-16 sm:w-16 h-16 sm:h-20 mb-4" />
+          <img src={CommerceLogo} alt="SEO Logo" className="w-16 sm:w-12 h-16 sm:h-13 mb-4" />
           <h1 className='text-cyan-text text-xl sm:text-2xl lg:text-3xl font-bold text-center'>
             SEO Services
           </h1>
@@ -60,7 +66,7 @@ const Services = () => {
 
         {/* Card 5 */}
         <SimpleCard className="w-full max-w-xs h-full flex flex-col justify-center items-center border-l-0">
-          <img src={MarketingLogo} alt="Digital Marketing Logo" className="w-16 sm:w-16 h-16 sm:h-20 mb-4" />
+          <img src={MarketingLogo} alt="Digital Marketing Logo" className="w-16 sm:w-12 h-16 sm:h-13 mb-4" />
           <h1 className='text-cyan-text text-xl sm:text-2xl lg:text-3xl font-bold text-center'>
             Digital Marketing
           </h1>
@@ -71,7 +77,7 @@ const Services = () => {
 
         {/* Card 6 */}
         <SimpleCard className="w-full max-w-xs h-full flex flex-col justify-center items-center border-l-0">
-          <img src={SocialmediaLogo} alt="Social Media Management Logo" className="w-16 sm:w-16 h-16 sm:h-20 mb-4" />
+          <img src={SocialmediaLogo} alt="Social Media Management Logo" className="w-16 sm:w-112 h-16 sm:h-13 mb-4" />
           <h1 className='text-cyan-text text-xl sm:text-2xl lg:text-3xl font-bold text-center'>
             Social Media Management
           </h1>
