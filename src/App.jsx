@@ -18,7 +18,6 @@ import logo from "./assets/logo.png";
 
 function App() {
   const [showHeaderElements, setShowHeaderElements] = useState(true);
-  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,12 +36,8 @@ function App() {
       <AuroraBackground>
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
-          animate={hasAnimated ? { opacity: 1, y: 0 } : { opacity: 1, y: 40 }}
-          onAnimationComplete={() => {
-            if (!hasAnimated) {
-              setHasAnimated(true); // Set to true after the animation finishes
-            }
-          }}
+          animate={{opacity: 1, y: 40 }}
+          
           transition={{
             delay: 0.5,
             duration: 1,
