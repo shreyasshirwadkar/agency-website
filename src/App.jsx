@@ -90,7 +90,7 @@ function App() {
       </AuroraBackground>
 
       <header className="flex justify-between align-middle fixed top-0 left-0 right-0 px-2 py-5 z-50 md:px-8 bg-transparent">
-        <div className="logo ml-4 md:ml-7">
+        <div className="logo ml-4 md:ml-7 bg-transparent">
           {showHeaderElements && (
             <a
               href="#"
