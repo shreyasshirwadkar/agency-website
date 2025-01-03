@@ -3,7 +3,7 @@ import React from 'react';
 import { Label } from "../components/ui/label";
 import { Input } from "../components/ui/input-form";
 import { cn } from "../lib/utils";
-
+import {motion} from "framer-motion"
 
 const handleSubmit = (e) => {
   e.preventDefault();
@@ -16,7 +16,24 @@ const Contact = () => {
     <div className='w-full h-full bg-light-black p-10 '>
       <div className='flex flex-col items-center gap-20 md:gap-0 lg:flex-row lg:justify-around w-full mt-20 bg-light-black mb-28'>
         <div>
-        <h1 className='text-4xl sm:text-9xl lg:text-8xl text-gradient mb-14 font-medium '>Let's talk!</h1>
+        <motion.h1
+        initial={{
+          opacity: 0,
+          y: 20,
+        }}
+        animate={{
+          opacity: 1,
+          y: [20, -5, 0],
+        }}
+        transition={{
+          duration: 0.5,
+          ease: [0.4, 0.0, 0.2, 1],
+        }}
+        className="text-center lg:text-left text-4xl sm:text-9xl lg:text-8xl text-gradient font-medium mt-20 mb-14 "
+      >
+       Let's talk!
+      </motion.h1>
+        {/* <h1 className='text-4xl sm:text-9xl lg:text-8xl text-gradient mb-14 font-medium '>Let's talk!</h1> */}
         <h2 className='text-xl text-cyan-text'>Office:</h2>
         <p className='text-white'>Keizersgracht 520,<br></br> 1017EK
 Amsterdam <br></br>

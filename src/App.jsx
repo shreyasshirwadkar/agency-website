@@ -5,7 +5,7 @@ import { AuroraBackground } from "./components/ui/aurora-bg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { FloatingNav } from "./components/ui/floating-navbar";
 import { HoverBorderGradient } from "./components/ui/hover-border-gradient";
-
+import { HeroHighlightDemo } from "./components/HeroHighlightDemo";
 import "./index.css";
 
 // Direct imports for components
@@ -121,6 +121,9 @@ function App() {
           )}
         </div>
       </header>
+          <section id="hero-section" >
+          <HeroHighlightDemo></HeroHighlightDemo>
+          </section>
 
       {/* Sections for smooth scroll */}
       <section id="services-section" className="section">

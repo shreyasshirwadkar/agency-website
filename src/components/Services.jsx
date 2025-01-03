@@ -12,9 +12,27 @@ const Services = () => {
   
     <div className='w-full h-full bg-light-black p-10'>
       
-      <h1 className='text-center lg:text-left text-4xl sm:text-9xl lg:text-8xl text-gradient font-medium mt-20 mb-14 '>
+      <motion.h1
+        initial={{
+          opacity: 0,
+          y: 20,
+        }}
+        animate={{
+          opacity: 1,
+          y: [20, -5, 0],
+        }}
+        transition={{
+          duration: 0.5,
+          ease: [0.4, 0.0, 0.2, 1],
+        }}
+        className="text-center lg:text-left text-4xl sm:text-9xl lg:text-8xl text-gradient font-medium mt-20 mb-14 "
+      >
         What we do
-      </h1>
+      </motion.h1>
+
+      {/* <h1 className='text-center lg:text-left text-4xl sm:text-9xl lg:text-8xl text-gradient font-medium mt-20 mb-14 '>
+        What we do
+      </h1> */}
     
       {/* Flex container for 3 columns and 2 rows */}
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center place-content-center gap-8 px-4 sm:px-8 lg:px-20'>
