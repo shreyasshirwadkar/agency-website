@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
-import { AuroraBackground } from "./components/ui/aurora-bg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { FloatingNav } from "./components/ui/floating-navbar";
 import { HoverBorderGradient } from "./components/ui/hover-border-gradient";
@@ -15,6 +14,7 @@ import Reviews from "./components/Reviews";
 import ContactUs from "./components/Contact";
 import Footer from "./components/Footer";
 import logo from "./assets/logo.png";
+import { Button } from "react-scroll";
 
 function App() {
   const [showHeaderElements, setShowHeaderElements] = useState(true);
@@ -31,13 +31,12 @@ function App() {
 
   const LandingPage = () => (
     <div>
-      <FloatingNav navItems={navItems} className="hidden md:flex"  />
+      <FloatingNav navItems={navItems} className="hidden md:flex" />
 
-      <AuroraBackground>
+      <div className="bg-[url(./bg.jpeg)] bg-cover bg-bottom h-screen flex justify-center">
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
-          animate={{opacity: 1, y: 40 }}
-          
+          animate={{ opacity: 1, y: 40 }}
           transition={{
             delay: 0.5,
             duration: 1,
@@ -50,11 +49,11 @@ function App() {
           </div>
 
           <div className="font-extralight text-base lg:text-xl sm:text-lg md:text-2xl text-neutral-200 py-4 bg-transparent text-center px-4 ">
-    We provide all-in-one tech solutions, all under one roof.
-  </div>
+            We provide all-in-one tech solutions, all under one roof.
+          </div>
 
           <div className="flex justify-evenly w-96 max-h-full bg-transparent px-12">
-            <HoverBorderGradient
+            {/* <HoverBorderGradient
               containerClassName="rounded-full"
               as="button"
               className="bg-black text-gray-400 hover:text-gray-300 flex items-center space-x-2"
@@ -79,10 +78,30 @@ function App() {
             >
               <AceternityLogo />
               Contact us
-            </HoverBorderGradient>
+            </HoverBorderGradient> */}
+            <button
+              className="bg-black font-medium text-white px-4 py-2 rounded-full border border-gray-600 hover:bg-gray-200 hover:text-black"
+              onClick={() => {
+                document.getElementById("services-section")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Services
+            </button>
+            <button
+              className="bg-black font-medium text-white px-4 py-2 rounded-full border border-gray-600 hover:bg-gray-200 hover:text-black"
+              onClick={() => {
+                document.getElementById("contact-section")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Contact Us
+            </button>
           </div>
         </motion.div>
-      </AuroraBackground>
+      </div>
 
       <header className="flex justify-between align-middle fixed top-0 left-0 right-0 px-2 py-5 z-50 md:px-8 bg-transparent">
         <div className="logo ml-4 md:ml-7 bg-transparent">
@@ -116,9 +135,9 @@ function App() {
           )}
         </div>
       </header>
-          <section id="hero-section" >
-          <HeroHighlightDemo></HeroHighlightDemo>
-          </section>
+      <section id="hero-section">
+        <HeroHighlightDemo></HeroHighlightDemo>
+      </section>
 
       {/* Sections for smooth scroll */}
       <section id="services-section" className="section">
